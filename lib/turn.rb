@@ -22,7 +22,8 @@ def position_taken?(board, index)
   board[index] == "X" || board[index] == "O"
 end
 
-def turn(board)
+def turn(board) do
  puts "Please enter 1-9:"
+ break
  input_to_index(input)
 end
