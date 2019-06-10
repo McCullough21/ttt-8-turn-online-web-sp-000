@@ -31,4 +31,3 @@ def turn(board)
   else "Move Invalid"
     turn(board)
   end
-end
