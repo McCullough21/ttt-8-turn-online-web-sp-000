@@ -7,7 +7,6 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input = gets.strip
   input.to_i - 1
 end
 
@@ -23,7 +22,11 @@ def position_taken?(board, index)
   board[index] == "X" || board[index] == "O"
 end
 
-def turn(board)
+def turn(board) do
+  puts "Please enter 1-9:"
+  input = gets.strip
+  input_to_index(input)
+end
  puts "Please enter 1-9:"
  end
    input_to_index(input)
